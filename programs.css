@@ -1,0 +1,345 @@
+body {
+  background-color: red;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 2366px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+img.logo {
+  position: relative;
+  left: 7px;
+  top: 15px; 
+  width: 200px;
+  height: 200px;
+  background: rgb(18, 18, 18);
+}
+.logdv {
+  background-color:rgb(18, 18, 18) ;
+  width: 200px;
+  padding: 0px 15px 50px 15px;
+  margin: -10px 0px -20px -8px;
+  border-bottom: 3px solid black;
+}
+.byblik {
+  margin-left: 235px;
+  width: 900px fit-content;
+  
+  top: -310px;
+  margin-right: 180px;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.begin {
+  padding: 1px 8px 10px 25px;
+  background-color: rgb(160,160,160);
+  color: rgb(18,18,18);
+}
+.byblik p{
+  text-indent: 20px;
+  font-size: 20px;
+
+}
+.byblik h1{
+  font-size: 40px;
+  text-indent: 125px;
+}
+.byblik h2{
+  font-size: 35px;
+  text-indent: 250px;
+}
+#tlt {
+  position: relative; /* Относительное позиционирование */ 
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+#tlt::after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 300px; /* Ширина подсказки */
+  left: 0; top: 0; /* Положение подсказки */
+  color: white; /* Цвет текста */
+  padding: 0.5em; /* Поля вокруг текста */
+  background-color: black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  pointer-events: none; /* Подсказка */
+  opacity: 0; /* Подсказка невидима */
+  transition: 0.5s; /* Время появления подсказки */
+  text-indent: 0px;
+} 
+#tlt:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: 2em; /* Положение подсказки */
+}
+.one img{
+  width: 256px;
+  height: 256px;
+  left: 60px;
+  top: 15px;
+  position: relative;
+}
+.comm1{
+  width: fit-content;
+  position: relative;
+  width: 500px;
+  right: -525px;
+  top: -225px;
+}
+.one {
+  padding: 0px 50px 15px 25px;
+  background-color: rgb(18, 18, 18);
+  color: rgb(160,160,160);
+  margin-top: 25px;
+  position: relative;
+  
+}
+h3 {
+  font-size: 35px;
+  text-indent: 50px;
+  padding-top: 50px;
+}
+.one p{
+  margin-top: -25px;
+}
+.two p{
+  margin-top: -25px;
+}
+.two {
+  background-color: rgb(18, 18, 18);
+  color: rgb(160,160,160);
+  margin-top: 25px;
+  padding: 0px 50px 15px 25px;
+}
+.two img{
+  width: 512px;
+  height: 288px;
+  left: 30px;
+  top: 45px;
+  position: relative;
+}
+.comm2{
+  width: fit-content;
+  position: relative;
+  width: 500px;
+  right: -575px;
+  top: -225px;
+}
+.three{
+  background-color: rgb(18, 18, 18);
+  color: rgb(160,160,160);
+  margin-top: 25px;
+  padding: 0px 50px 15px 25px;
+}
+.three img{
+  width: 256px;
+  height: 256px;
+  left: 60px;
+  top: 15px;
+  position: relative;
+}
+.three p{
+  margin-top: -25px;
+}
+.four {
+  background-color: rgb(18, 18, 18);
+  color: rgb(160,160,160);
+  margin-top: 25px;
+  padding: 0px 50px 15px 25px;
+}
+.four img{
+  width: 256px;
+  height: 256px;
+  left: 60px;
+  top: 15px;
+  position: relative;
+}
+.four p{
+  margin-top: -25px;
+}
+.imgod {
+  width: 256px;
+  height: 256px;
+}
+.five {
+  background-color: rgb(18, 18, 18);
+  color: rgb(160,160,160);
+  margin-top: 25px;
+  padding: 0px 50px 15px 25px;
+}
+.five img{
+  width: 512px;
+  height: 288px;
+  left: 30px;
+  top: 45px;
+  position: relative;
+}
+.five p{
+  margin-top: -25px;
+}
+.btns {
+  position: relative;
+  width: 500px;
+  right: -600px;
+  top: -180px;
+  width: fit-content;
+  height: 40px;
+  font-size: 30px;
+}
+.dwn {
+  margin-right: 30px;
+  background-color: rgb(133, 2, 2);
+  padding: 2px 4px 2px 4px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(0,0,0);
+  text-decoration: none;
+  transition: .3s linear;
+  display: inline-block;
+  font-size: 30px;
+  text-indent: 0px;
+  color: rgb(160,160,160);
+}
+.dwn:hover{
+  background-color: indigo;
+}
+.of {
+  margin-left: 30px;
+  background-color: rgb(51, 51, 51);
+  padding: 2px 4px 2px 4px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(0,0,0);
+  text-decoration: none;
+  transition: .3s linear;
+  display: inline-block;
+  font-size: 30px;
+  text-indent: 0px;
+  color: rgb(160,160,160);
+}
+.of:hover{
+  background-color: indigo;
+}
+.category-wrap {
+  padding: 15px;
+  background: rgb(18, 18, 18);
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  height: fit-content;
+  position: sticky;
+  top: 0px;
+  margin: 20px 0px 0px -8px;
+  right:-40px
+}
+.category-wrap h3 {
+  font-size: 22px;
+  color: rgb(160,160,160);
+  margin: 0px 0px 10px;
+  padding: 0px 5px;
+  position: relative;
+  text-indent: 0px;
+}
+.category-wrap h3:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: indigo;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  box-shadow: -8px -8px indigo, 0 -8px #80C8A0, -8px 0 #80C8A0;
+}
+.category-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.category-wrap li {
+  margin: 12px 0 0 0px;
+  position: sticky;
+}
+.category-wrap a {
+  text-decoration: none;
+  display: block;  
+  font-size: 18px;
+  color: rgb(160,160,160);
+  padding: 5px;
+  position: relative;
+  transition: .3s linear;
+}
+.category-wrap a:after {
+  content:"\f18e";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 5px;
+  color: white;
+  transition: .2s linear;
+}
+.category-wrap a:hover {
+  background: indigo;
+  color: white;
+}
+.loot {
+  background-image: url(Img/footerfon.jpeg);
+  margin: 0px 0px -20px 0px;
+}
+#templatemo_footer {
+	clear: both;
+	width: 101%;
+	height: 120px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  margin: 0px -20px 20px -10px;
+  color: rgb(160,160,160);
+}
+#templatemo_footer a{
+  color: gold;
+  text-decoration: none;
+}
+.ftr {
+  top: 40px;
+  position: relative; 
+}
+#templatemo_footer img{
+  width: 80px;
+  height: 80px;
+  right: -47%;
+  top: -20px;
+  position: relative;
+}
+.gods {
+  margin-top: 0px;
+  color: gold;
+  text-align: center;
+  padding-left: 10px;
+}
+#Kratos {
+  position: relative; /* Относительное позиционирование */ 
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+#Kratos:after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 200px; /* Ширина подсказки */
+  left: 0%; top: 30%; /* Положение подсказки */
+  color: white; /* Цвет текста */
+  padding: 0px; /* Поля вокруг текста */
+  background-color: black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  pointer-events: none; /* Подсказка */
+  opacity: 0; /* Подсказка невидима */
+  transition: 0.5s; /* Время появления подсказки */
+  text-indent: 0px;
+}
+#Kratos:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: -40px; left: -50px;
+}
