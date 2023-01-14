@@ -6,14 +6,16 @@
 <meta name="keywords" content="Game Website Template, free templates, website templates, CSS, XHTML" />
 <meta name="description" content="Game Website Template - download free XHTML/CSS files from templatemo.com" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-HW-JzGmhwcHu9AAATd7dUQVaXr5QYfNc5_oE-Sy3Z6rpJ2-gr-T-MdgxC7bMnuP8UIm7qMhXKZi7xYSJz6xOwijKQ7DWBHXIX2OJSC4h0xAp5yAMfxiubXUHa4F_cSkIzB6xWpldawulNPJjh8WE3CqJMh6iAsbp7kj0GyX7eSaUUFMC9m5FriVDu7G0zc-GBhbx-PzAo3DROTeMc6GJ7AGt34gNow5_D6-DXCpsdwqyt9cDACi1PHaxbkK8bWqsu5AK_BywSIMjJvjE9Q0xtR3cdH5Lu1VNOEIvP1WXSrPUwGSxM0Xoz3ptV91SRXKnrt6p-XaJpA6E8PQ7DU2GGiPGY2aku9We9a5_hSbAy2d3pM-ZVUGV-220DVeVC-WmxtfhbqOebPNOLOqzCyy625hb-S4UQMbhhhk4-ABdSBFT71qngKxkOJlCOUtgeHRLbgithlx3H3qRr1GxquQGQxd4gjw8E8K9kOm5IIlAdeGKTuG7vCND4aITF5V1Y9ojAMDj-yUY0Rg5BIT4o3VErdr8ZoaQKlshF3g4WSnHuTsXy83MBwREXRH0_H3d8GWHZF_K3ypWqpzYgpM12qyTejF5bVnhCp3mqTedYlp2bMxo32TPdb7N5TKEncT7hDUmf9rpXXf4ASv1z9R5IPSBMUOxCJuY95oQTBGlh5Jhpn9cM1x9YPdX7MJQ8kt4J8zjlwV2kXwngE34anT8JNoqMt61X1u84Wz5j67VYLio0uV6PD_9T539vYQMmjaUJ1eYrpyvKGa624EkLnm9vuuBBaEblhVOLUAYazyrXLFp1rf5XTYMT1PjTP9tm8xslDghFJxnTtRVGsHdEOJdlqyevmA_vsEkR9lTBVCe1E_BL7LvhU-r50MvJJ-4qCAU_1KdBBtjOaQDy8-hDfbl7A7F3cLvnfZAxEgpU70I2klGmOTvx7c7acHAETIIT8PxrxoUuDn5dwpZvKoOQism_QexGi7rx3tqqOKM4eqBNz60u4_w5TS_Kdrb0jdtsJrCDKVW6NPkips5Tiiy8QamMnNyqPYA6mIvQAvCHguIZ36V2kx_liFgvgQbrxg1BtMdGkqJhCj3ZlXh2pINjrEExlqau9D6t0YBgSm35vA8LyyX0xP0ZAxWX4KiTwxLJM8I_3LCSOlcvjKPOz8ea2hotfAJ2C-YrSCB0PGNQk3iQtRkEMNEG_6pD163iGx2hnmMhSaly73Hv7LsqW6cBPe7xueYrzD0vuPx0iz8jgyDkr3EfxK9uXxV0DBRPmlyKebopsXaRFg0qXLOamZNiiytpdqQUhNWNNTkKj9mfcKg3WvPq-duUxEcrsvadTNs2ujGiNZASQyz0s160C8kDGdGH1VxlBHBzV6rvtQqHIe-g8VdIXamIaxM9sL7IrpGupA6pOSD0W5UrHNnHxgjqO5nvVkV_W340bMipCNXcloWLPIjvnAMmGxwrhUuCX7VofutX9vRrZQTCloXcBrXhhIIUj4QC1TPeZy79aKo9kJJ4q6fI-6ylO8Oc-dLvRKbWXStYQuzUogl3bOlQ3dXFGUDXhWBL04QPo2KPE3GsSPK_omBtS0VMpWg_DWaxZWnArONixkL4s63iwDyGLF5fZgzhUwL4sZhjN7nrX93ntbcagi7N0lsRWlYYDce_v9UloD5z85Mg3G2xm_6qnwnODLCrsPAofc1XAX99XroeTGruHsEl5K4aQyjeHB0oBFB7HqnnBy33Ek6XW6C5FNf0Q0ydvGrb-cpqpK6j7wQUGpPvKXYr-cuzwTbmpjzeWdvjdAnPicdTemNPyPDgyCy6pZ0rZNVhvMcoQrPDvKatqEllge2666y1_BTISfTASIOHDUZwVk" charset="UTF-8"></script>
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/fns.js" type="text/javascript"></script>
+<script src="chatJS.js" type="text/javascript"></script>
 </head>
 
 
 <body>
 
-<div id="templatemo_wrapper_inner">
-	<!-- шапка сайта -->
+<div class="position_block">
+<!-- шапка сайта -->
     <div id="header">
       <div class="bannerlog">
         <table>
@@ -24,8 +26,8 @@
             <td>
               <section class="loginform">
                 <form name="login" action="index submit" method="get" accept-charset="utf-8"> <ul>
-                <li><label for="usermail">Email</label>
-                <input type="email" name="usermail" placeholder=" yourname@email.com " required></li> <li><label for="password">Password</label>
+                <li><label for="usermail">Логин</label>
+                <input type="email" name="usermail" placeholder=" yourname@email.com " required></li> <li><label for="password">Пароль</label>
                 <input type="password" name="password" placeholder="password" required></li> <li>
                 <input type="submit" value="Login"></li>
                 </ul> </form>
@@ -37,9 +39,9 @@
        </div> 
     <!-- конец шапки сайта-->
     <!-- меню навигации -->    
-    <div id="templatemo_menu">
+    <div id="navigation">
       <table cellpadding="10px">
-          <tr><td><a href="tyrnir1.html">Создать турнир</a></td><td><a href="#">Присоединиться к турниру</a></td><td><a href="programs.html">Полезные Программы</a></td><td><a href="#">Форум</a></td>
+          <tr><td><a href="tyrnir1.html">Создать турнир</a></td><td><a href="Kiberys2.html">Присоединиться к турниру</a></td><td><a href="programs.html">Полезные Программы</a></td><td><a href="https://kiberus.forumotion.me/">Форум</a></td>
             <td><form action="" method="get">
             <input name="s" placeholder="Искать здесь..." type="search">
             <button type="submit">Поиск</button>
@@ -47,95 +49,38 @@
       </table>
     </div> 
     <!-- конец меню навигации -->
-    
-    <div id="templatemo_content_wrapper">
+</div>    
 
-      <div class="templatemo_side_bar margin_right_10">
+<div class="position_block_2">
+<!-- левый сайдебар -->
+  <div class="left_side_bar">
+      <img width="160px" height="50px" src="images/rek.jpg">
+  </div>
+<!-- конец левого сайдебар -->
 
-<!-- сюда вставим календарь-->
+<!-- контент -->
 
-<!-- реклама-->
-     <div class="reklama">
-      <table Cellpadding ="15px">
-        <tr>
-          <td><img width="160px" src="images/rek.jpg"></td></tr>
+  <div class="body_content">
 
-          <tr><td><img width="160px" src="images/rek.jpg"></td></tr>
+  </div>
+<!-- конец контент -->
 
-          <tr><td><img width="160px" src="images/rek.jpg"></td></tr>
-          </tr>
-      </table>
-            </div>
-        </div> 
-<!-- конец рекламы-->               
+<!-- правый сайдебар -->
 
+  <div class="right_side_bar">
 
-
-        <!-- end of left side bar -->
-        
-        <div class="templatemo_content margin_right_10">
-        
-        	<div class="content_section">
-           	  <div class="header_02">Arcade Game</div>
-              <div class="image_wrapper_01"><img src="images/templatemo_image_01.jpg" alt="image" /></div>
-                <p><span>This  game template is provided by <a href="http://www.templatemo.com" target="_parent">TemplateMo.com</a> for free of charge.</span> You may download, modify and apply this template for your personal or business websites. Credit goes to <a href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos. Praesent tempor, arcu at egestas vestibulum, lorem elit viverra velit, sit amet gravida ligula ante et sem.</p>
-              <div class="margin_bottom_20"></div>
-                <div class="rc_btn_01 fl"><a href="#">Read More</a></div> 
-                
-                <div class="cleaner"></div>
-            </div>
-            
-            <div class="margin_bottom_20 horizontal_divider"></div> 
-			<div class="margin_bottom_20"></div>
-            
-            <div class="content_section">
-           	  <div class="header_02">Fighting Game</div>
-              <div class="image_wrapper_01"><img src="images/templatemo_image_02.jpg" alt="image" /></div>
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Maecenas pretium diam commodo mauris vestibulum id accumsan enim ultrices. Quisque massa magna, porta nec congue et, elementum eget sem. Nunc vel libero libero, in dignissim urna. </p>
-			  <div class="margin_bottom_20"></div>
-              <div class="rc_btn_01 fl"><a href="#">Read More</a></div>  
-                <div class="cleaner"></div>              
-            </div>
-            
-        	<div class="margin_bottom_40"></div>
-        </div> <!-- end of content -->
-        
-        <div class="templatemo_side_bar2">
-            <section class="chat">
-                <div class="message message--user-1">
-                  <time class="message__time">21.02.2017 21:12:07</time>
-                  <figure class="message__author-pic">
-                    <img src="http://pipsum.com/40x40.jpg">
-                  </figure>
-                  <div class="message__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at purus nibh. Cras metus nulla, vestibulum in auctor ac, fermentum vitae tellus.</p>
-                  </div>
-                </div>
-                <div class="message message--user-2">
-                  <time class="message__time">21.02.2017 21:12:07</time>
-                  <figure class="message__author-pic">
-                    <img src="https://placeimg.com/40/40/people">
-                  </figure>
-                  <div class="message__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at purus nibh. Cras metus nulla, vestibulum in auctor ac, fermentum vitae tellus.</p>
-                  </div>
-                </div>            
-                </div>
-              </section>
-        </div> 
-        <!-- end of right side bar -->
-    	
-        <div class="cleaner"></div>    
-    </div> <!-- end of content wrapper -->
-    
+  </div>
+<!-- конец правого сайдебар -->
 </div>
-</div>
+
+
+
 
  <div id="templatemo_footer">
         Разработчики <a href="#">Project Cyberus</a> | <a href="project1tsprint@gmail.com" target="_parent">Поддержка</a>
    	</div> <!-- end of footer -->
-    <div class="margin_bottom_10"></div>
-    
+
+ 
 
 
 
