@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  background-color: rgb(124, 2, 2);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -284,7 +284,7 @@ h3 {
   color: white;
 }
 .loot {
-  background-image: url(Img/footerfon.jpeg);
+  background-image: url(images/1.jpg);
   margin: 0px 0px -20px 0px;
 }
 #templatemo_footer {
