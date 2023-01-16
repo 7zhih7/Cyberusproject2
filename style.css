@@ -1,0 +1,148 @@
+/* авторизация на сайте */
+#loginform, ul, li {
+	list-style-type: none;
+}
+/* конец авторизации */
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(images/fon.jpg);
+}
+
+a:link, a:visited { color: #FFFFFF; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #99FF00; text-decoration: underline; }
+
+.position_block {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: auto;
+	padding: auto;
+	width: 90%;
+	height: 320px;
+}
+
+.position_block_2 {
+	margin: auto;
+	padding: auto;
+	width: 90%;
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+/* Шапка сайта */
+.header {
+	width: 980px;
+	height: 300px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin: auto;
+	}
+#bannerlog {
+	margin-left: 0px;
+	margin: auto;
+	width: 90%;
+	height: auto;	
+	border-radius: 100;
+}
+	
+/* конец шапки */
+
+/* Навигация */
+
+#navigation {
+	width: 90%;
+	height: 50px;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-image: url(images/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* конец навигации */
+
+/* левый side_bar */
+.left_side_bar {
+	text-align: center;
+	padding: 15px;
+	background-image: url(images/1.jpg);
+	width: 180px;
+	height: 400px;
+	margin: auto;	
+}
+
+/* меню контента */
+
+.body_content {
+	background-image: url(images/1.jpg);
+	width: 60%;
+	height: 400px;
+	margin: auto;
+	padding: 15px;
+}
+
+/* правый side_bar */
+
+.right_side_bar {
+	text-align: center;
+	background-image: url(images/1.jpg);
+	width: 180px;
+	height: 400px;
+	margin: auto;
+	padding: 15px;
+}
+
+/* подвал */
+#footer {
+	color: white;
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px 0 0 0;
+	text-align: center;
+	background-image: url(images/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* календарь */
+#calendar2 {
+	width: 100%;
+	font: monospace;
+	line-height: 1.2em;
+	font-size: 15px;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+}
+#calendar2 thead tr:last-child {
+	font-size: small;
+	color: rgb(255, 255, 255);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+	color: rgb(255, 255, 255);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+	cursor: pointer;
+}
+#calendar2 tbody td {
+	color: rgb(0, 136, 255);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+	color: rgb(255, 0, 0);
+}
+#calendar2 tbody td.today {
+	background: rgb(0, 255, 21);
+	color: #fff;
+}
