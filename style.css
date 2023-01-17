@@ -150,9 +150,7 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	color: #fff;
 }
 
-
-
-
+/* подсказка подвала */
 
 #tlt {
 	position: relative; /* Относительное позиционирование */ 
@@ -162,7 +160,7 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	position: absolute; /* Абсолютное позиционирование */
 	width: 500px; /* Ширина подсказки */
 	height: 15px;
-	right: 0; top: 0; /* Положение подсказки */
+	left: 0; top: 0; /* Положение подсказки */
 	color: white; /* Цвет текста */
 	padding: auto; /* Поля вокруг текста */
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
