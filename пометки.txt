@@ -5,3 +5,23 @@
 Проверить кнопку поиска
 
 отредактировать body
+<код от бд>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAeLChK6hkKzWUPfXnD4osFy5uSjMzRSAU",
+    authDomain: "cyberus-project.firebaseapp.com",
+    projectId: "cyberus-project",
+    storageBucket: "cyberus-project.appspot.com",
+    messagingSenderId: "918414033307",
+    appId: "1:918414033307:web:4fa8a8550492c585eda13e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>

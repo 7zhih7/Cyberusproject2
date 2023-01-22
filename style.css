@@ -79,8 +79,11 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	padding: 15px;
 	background-image: url(images/1.jpg);
 	width: 180px;
-	height: 720px;
-	margin: auto;	
+	height: 950px;
+	margin: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* меню контента */
@@ -88,7 +91,7 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 .body_content {
 	background-image: url(images/1.jpg);
 	width: 60%;
-	height: 720px;
+	height: 950px;
 	margin: auto;
 	padding: 15px;
 }
@@ -99,9 +102,12 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	text-align: center;
 	background-image: url(images/1.jpg);
 	width: 180px;
-	height: 720px;
+	height: 950px;
 	margin: auto;
 	padding: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* подвал */
@@ -110,7 +116,7 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	width: 90%;
 	height: 45px;
 	margin: 0 auto;
-	margin-top: 320px;
+	margin-top: 550px;
 	margin-bottom: 10px;
 	padding: 20px 0 0 0;
 	text-align: center;
@@ -282,8 +288,20 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 .Img_1 {
 	width: 75px;
 	height: 100px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+.Img_nov {
+	width: 360px;
+	height: 168px;
 	background-color: black;
 	color: white;
 	margin-left: 25px;
 	margin-top: 25px;
+}
+.text_nov {
+	width: auto;
+	height: 168px;
+	color: white;
+	background-color: rgb(0, 0, 0);
 }
