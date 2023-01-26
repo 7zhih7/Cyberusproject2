@@ -1,24 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="tyrnir1.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Project Cyberus</title>
+<link rel="icon" href="images/log v2 29.png" type="images/.jpg">
+<meta name="keywords" lang="ru" content="Игры, чат, общение, форум, турниры, киберспорт, программы">
+<meta name="keywords" lang="en" content="Games, chat, chat, forum, tournaments, esports, programs">
+<meta name="keywords" content="Game Website Template, free templates, website templates, CSS, XHTML" />
+<meta name="description" content="Game Website Template - download free XHTML/CSS files from templatemo.com" />
+<link href="style_tyrnir.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/fns.js" type="text/javascript"></script>
+<script src="chatJS.js" type="text/javascript"></script>
+<script src="script_1.js" type="text/javascript"></script>
 </head>
+
+
 <body>
-    <header>
+
+<div class="position_block">
+<!-- шапка сайта -->
+    <div id="header">
+      <div class="bannerlog">
+        <table>
+          <tr>
+            <td>   
         <a href="index.html"><img src="images/log v2 29.png"></a>
-    </header>
-    <main>
-       <h2>Создать турнир</h2>
-            <p>Заполни форму</p>
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfmMln6WGlSV0n-gZg3xP7qX7eLGwcNsfULZfRrWq13a1-ADw/viewform?embedded=true"
-                    width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-        </div>
-    </main>
+            </td>         
+            <td>
+              <section class="loginform">
+                <form name="login" action="index submit" method="get" accept-charset="utf-8"> <ul>
+                <li style="color: white; padding-left: 10px;"><label for="usermail">Логин</label>
+                <input type="email" name="usermail" placeholder="  " required></li> <li style="color: white;"><label for="password">Пароль</label>
+                <input type="password" name="password" placeholder="" required></li> <li>
+                <input type="submit" value="Вход"></li>
+                </ul> </form>
+                </section>
+           </td>
+           </tr>
+        </table>
+          </div>
+       </div> 
+    <!-- конец шапки сайта-->
+    <!-- меню навигации -->    
+    <div id="navigation">
+      <table cellpadding="10px" style="padding-left: 25%;">
+          <tr><td><a href="tyrnir1.html">Создать турнир</a></td><td><a href="tyrnir2_1.html">Присоединиться к турниру</a></td><td><a href="programs.html">Полезные Программы</a></td><td><a href="https://cyberus.forumotion.me/">Форум</a></td>
+            <td><form action="" method="get">
+            <input name="s" placeholder="Искать здесь..." type="search">
+            <button type="submit">Поиск</button>
+          </form></td></tr> 
+      </table>
+    </div> 
+    <!-- конец меню навигации -->
+</div>    
+
+<div class="position_block_2">
+<!-- левый сайдебар -->
+  <div class="left_side_bar">
+    <table style="padding-top: 10px; padding-bottom: 10px;" id="calendar2">
+      <thead>
+        <tr><td><td colspan="5"><td>
+        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+      <tbody>
+    </table>
+    <table>
+      <tr>
+    <td><img style="padding-top: 10px; padding-bottom: 10px;" width="170px" height="80px" src="images/rek.jpg"></td>
+      </tr>
+      <tr>    
+    <td><img style="padding-top: 10px; padding-bottom: 10px;" width="170px" height="80px" src="images/rek.jpg"></td>
+      </tr>
+    </table>
+  </div>
+<!-- конец левого сайдебар -->
+
+<!-- контент -->
+
+  <div class="body_content">
+    <h2 class="text_obz">Создать турнир</h2>
+            <p class="text_obz_1">Заполни форму</p>
+                <iframe class="fr_1" src="https://docs.google.com/forms/d/e/1FAIpQLSfmMln6WGlSV0n-gZg3xP7qX7eLGwcNsfULZfRrWq13a1-ADw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+  </div>
+<!-- конец контент -->
+
+<!-- правый сайдебар -->
+
+<div class="right_side_bar">
+    <div class='chat'>
+      <div class='chat-messages'>
+      
+        <div class='chat-messages__content' id='messages'>
+            <p style="color: white;">сообщение</p>
+         </div>
+      </div>
+      
+      <div class='chat-input'>
+          <form method='post' id='chat-form'>
+            <input type='text' id='message-text' class='chat-form__input' placeholder='Введите сообщение'> <input type='submit' class='chat-form__submit' value='отправить'>
+          </form>
+      </div>
+    </div>
+</div>
+<!-- конец правого сайдебар -->
+</div>
+<div id="footer">
+  <a target="_blank" href="project1tsprint@gmail.com" target="_parent">Поддержка</a> | <span id="tlt" data-tooltip="Жмищенко, KpyasaH, Еpisany, DikiiPirogok, Xopwei">Разработчики</span>
+</div> <!-- end of footer -->
+
+ 
 
 
 
@@ -27,15 +117,71 @@
 
 
 
-
-
-
-
-
-
-
-
-
+<script ="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp  } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics  } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
     
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+     apiKey: "AIzaSyDNJJDAE9tdGChd-5iTkT67vBplmaWg0Pc",
+     authDomain: "cyberusdb.firebaseapp.com",
+     projectId: "cyberusdb",
+     storageBucket: "cyberusdb.appspot.com",
+     messagingSenderId:  "142903212376",
+     appId: "1:142903212376:web:eaca643eaa5790f8310d2d",
+     measurementId: "G-M2WV7SVTJD"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics  = getAnalytics(app);
+</script>
+
+<script>
+  function Calendar2(id, year, month) {
+  var Dlast = new Date(year,month+1,0).getDate(),
+      D = new Date(year,month,Dlast),
+      DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+      DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+      calendar = '<tr>',
+      month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+  if (DNfirst != 0) {
+    for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+  }else{
+    for(var  i = 0; i < 6; i++) calendar += '<td>';
+  }
+  for(var  i = 1; i <= Dlast; i++) {
+    if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+      calendar += '<td class="today">' + i;
+    }else{
+      calendar += '<td>' + i;
+    }
+    if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+      calendar += '<tr>';
+    }
+  }
+  for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+  document.querySelector('#'+id+' tbody').innerHTML = calendar;
+  document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+  document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+  document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+  if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+      document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+  }
+  }
+  Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+  // переключатель минус месяц
+  document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+    Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+  }
+  // переключатель плюс месяц
+  document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+    Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+  }
+</script>
 </body>
 </html>
