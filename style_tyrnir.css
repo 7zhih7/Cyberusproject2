@@ -192,10 +192,12 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
 	color: rgb(255, 255, 255);
 	background-color: black;
     width: 98%;
+	height: 25px;
     margin: auto;
     text-align: left;
+	padding-top: 10px;
     padding-left: 10px;
-    padding-bottom: 10px;
+    
 }
 .fr_1 {
     min-width: 640px;
@@ -203,6 +205,24 @@ a:active, a:hover { color: #99FF00; text-decoration: underline; }
     margin: auto;
 }
 
+.lbl-tyrnir2_2_v {
+	background-color: black;
+	color: white;
+	
+  }
+  
+  input[name='tyrnir2_2_v'] {
+	display: none;
+	
+  }
+  
+  .text-for-tyrnir2_2_v{
+	display: none;
+  }
+  
+  #jt-webapp:checked~#t-webapp {
+	display: block;
+  }
 
 
 
