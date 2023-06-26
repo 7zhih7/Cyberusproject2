@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Полезные программы</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="Полезные программы">
+        <link rel="stylesheet" href="programstyle1.css">
+        <link rel="icon" href="images/log v2 29.png" type="images/.jpg">
+        
+    </head>
+    <script>
+      (function(){
+      var a = document.querySelector('#menu'), b = null;  // селектор блока, который нужно закрепить
+      window.addEventListener('scroll', Ascroll, false);
+      document.body.addEventListener('scroll', Ascroll, false);  
+      function Ascroll() {
+        if (b == null) {  
+          var Sa = getComputedStyle(a, ''), s = '';
+          for (var i = 0; i < Sa.length; i++) {  
+            if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+              s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+            }
+          }
+          b = document.createElement('div');  
+          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+          a.insertBefore(b, a.firstChild);  
+          var l = a.childNodes.length;
+          for (var i = 1; i < l; i++) {  
+            b.appendChild(a.childNodes[1]);
+          }
+          a.style.height = b.getBoundingClientRect().height + 'px'; 
+          a.style.padding = '15';
+          a.style.border = '0'; 
+        }
+        if (a.getBoundingClientRect().top <= 0) { 
+          b.className = 'sticky';
+        } else {
+          b.className = '';
+        }
+        window.addEventListener('resize', function() {
+          a.children[0].style.width = getComputedStyle(a, '').width
+        }, false); 
+      }
+      })()
+    </script>
+   
+    <body>
+        <header class="header">
+          <a href="#Opening-the-portal-now"><img class="up" src="images/up_streoka.png"></a><!--images/up_streoka.png-->
+          <a name="Opening-the-portal-now"></a>
+        </header>
+        <div class="logdv"><a href="index.html"><img class="logo" src="images/log v2 29.png"></a></div>
+        <div id="menu" class="category-wrap">
+          <h3>Программы</h3>
+          <ul>
+            <li><a href="#1">Ccleaner</a></li>
+            <li><a href="#2">Wallpaper Engine</a></li>
+            <li><a href="#3">OBS Studio</a></li>
+            <li><a href="#4">Share X</a></li>
+            <li><a href="#5">AIDA64</a></li>
+            <li><a href="#6">MSI Afterburner</a></li>
+            <li><a href="#7">Rivatuner Statistics Server</a></li>
+            <li><a href="#8">Opera GX</a></li>
+            <li><a href="#9">Notepad ++</a></li>
+            <li><a href="#10">MSI Center</a></li>
+          </ul>
+        </div>
+        <main class="byblik">
+          <div class="begin"><!--Где я-->
+            <h1>Коротко о разделе</h1>
+            <p id="text2">Вы попали в раздел полезных программ сайта Cyberus, здесь вы найдёте их описание и ссылку на скачивание. Эти программы были единолично отобраны и протестированны нашей редакцией. Если же вы мне не доверяете, то мы оставили ссылку на официальный сайт производителя специально для вас :D</p>
+            <p id="text2">Чтобы далеко не идти, вот вам одна кнопка скачивания:</p>
+            <div class="dropdown" >
+              <a class="dropbtn" style="cursor:default;" href="https://www.idrlabs.com/ru/autism-spectrum/test.php" target="_blank"><span>Скачать</span><img src="images\BTN_Rpndtr.png"></a>
+              <div class="dropdown-content">
+                <table>
+                  <tr>
+                    <td><a id="tlt" data-tooltip="Ccleaner" href="https://drive.google.com/file/d/14DtTXwwN-dA1BHlT-ugg0vEizME6LTja/view?usp=share_link"><img src="images\1CoC.png"></a></td>  
+                    <td><a id="tlt" data-tooltip="Wallpaper Engine" href="programs.html#2"><img src="images\Wal_log.gif"></a></td>   
+                    <td><a id="tlt" data-tooltip="OBS Studio" href="https://drive.google.com/file/d/12MTul7QS7UvC7UCUbS-GRdPHFHcPnCWh/view?usp=share_link"><img src="images\3UAC.png"></a></td>  
+                    <td><a id="tlt" data-tooltip="ShareX" href="https://drive.google.com/file/d/1aEixwuQa0wkQoFHfLeyxWJrvGZvLpONJ/view?usp=share_link"><img src="images\4ShareX.png"></a></td>
+                    <td><a id="tlt" data-tooltip="AIDA64" href="https://drive.google.com/file/d/1-zU7eGyagBN1WBsIWt95AXV5BuWFOWmP/view?usp=share_link"><img src="images\Aid_log.png"></a></td>
+                  </tr>
+                  <tr>
+                    <td><a id="tlt" data-tooltip="MSI Afterburner" href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1675019692~acl=/*~hmac=9c452a9755bd2110d76596d16a5beae354add5c2a947f3647c033ece3dc10420"><img src="images\MSI_log.png"></a></td>
+                    <td><a id="tlt" data-tooltip="Rivatuner Statistics Server" href="https://www.guru3d.com/index.php?ct=files&action=download&"><img src="images\7RTTS_log.png"></a></td>
+                    <td><a id="tlt" data-tooltip="Opera GX" href="https://www.opera.com/ru/computer/thanks?ni=eapgx&os=windows&edition=Yx+GX"><img src="images\8Icon_of_sin.png"></a></td>
+                    <td><a id="tlt" data-tooltip="Notepad ++" href="programs.html#9"><img src="images\9Kurama.png"></a></td>
+                    <td><a id="tlt" data-tooltip="MSI Center" href="programs.html#10"><img src="images\Cum_missiya_logo.png"></a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="one"><a name="1"></a><!--Прога 1-->
+            <h3>1) Ccleaner</h3>
+            <img class="img1" src="images/1CoC.png">
+            <div class="comm1"><p>Ну естественно это будет Ccleaner, что-то нормальное ищите ниже. Меню слева видишь? Сам делал</p></div>
+            <div class="btns"><a class="dwn" href="https://drive.google.com/file/d/14DtTXwwN-dA1BHlT-ugg0vEizME6LTja/view?usp=share_link" target="_blank">Скачать</a><a class="of" href="https://www.ccleaner.com/ru-ru" target="_blank">Сайт</a></div>
+            <p>CCleaner — бесплатная программа, которая предоставляет пользователям простой в использовании инструмент для очистки и оптимизации операционных систем Windows. Утилита была создана британской фирмой Piriform Limited и написана на C++. Обычно новая версия дистрибутива выходит каждый месяц. На декабрь 2012 года с официального сайта программы было совершено более 1 миллиарда загрузок.</p>
+          </div>
+          <div class="two"><a name="2"></a><!--Прога 2-->
+            <h3>2) Wallpaper Engine</h3>
+            <img class="img2" src="images/2Wal.gif">
+            <div class="comm2"><p>Вот это уже более полезная программа, это анимированные, и не только, обои. Правда она платная, но своих денег стоит. Наверное. Как вы думаете, почему все самые лучшие программы находятся в конце статьи? Заглушку под рекламу видите? Вот и ответ.</p></div>
+            <div class="btns"><a class="dwn" href="https://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank">Скачать</a><a class="of" href="https://www.wallpaperengine.io" target="_blank">Сайт</a></div>
+            <p>Wallpaper Engine — это приложение для Windows с сопутствующим приложением на Android, которое позволяет пользователям использовать и создавать анимированные и интерактивные обои. Он поддерживает использование видеофайлов, аудиофайлов, веб-страниц и некоторых 3D-приложений в качестве обоев. Данная программа платная и для скачивания доступна только в Steam.</p>
+          </div>
+          <div class="one"><a  name="3"></a><!--Прога 3-->
+            <h3>3) OBS Studio</h3>
+            <img class="img1" src="images/3UAC.png">
+            <div class="comm1"><p>OBS нужен для захвата экрана под стримы и не только. Аппаратные аналоги конечно лучше, но они стоят денег, и это уже явно не программа.</p></div>
+            <div class="btns"><a class="dwn" href="https://drive.google.com/file/d/12MTul7QS7UvC7UCUbS-GRdPHFHcPnCWh/view?usp=share_link" target="_blank">Скачать</a><a class="of" href="https://obsproject.com" target="_blank">Сайт</a></div>
+            <p>Open Broadcaster Software (OBS) — свободная программа с открытым исходным кодом для записи видео и потокового вещания, разрабатываемая проектом OBS и сообществом независимых разработчиков.</p>
+          </div>
+          <div class="one"><a name="4"></a><!--Прога 4-->
+            <h3>4) ShareX</h3>
+            <img class="img1" src="images/4ShareX.png">
+            <div class="comm1"><p> Нужна для создания скриншотов, записи экрана без звука, пересылка всего вышеупомянутого на множество платформ одновременно и простого фото-видео редактора.</p></div>
+            <div class="btns"><a class="dwn" href="https://drive.google.com/file/d/1aEixwuQa0wkQoFHfLeyxWJrvGZvLpONJ/view?usp=share_link" target="_blank">Скачать</a><a class="of" href="https://getsharex.com" target="_blank">Сайт</a></div>
+            <p>ShareX — это бесплатная программа для создания скриншотов и скринкастов с открытым исходным кодом для Microsoft Windows. Исходный код проекта размещен на GitHub. Он также доступен в Microsoft Store и Steam.</p>
+          </div>
+          <div class="two"><a name="5"></a><!--Прога 5-->
+            <h3>5) Aida 64</h3>
+            <img class="img2" src="images/5AIDA64.png">
+            <div class="comm2"><p> По сути улучшенный диспетчер задач, но с фокусами. Хоть и является условно-бесплатной программой, но всё равно прекрасна. Специализация её бенчмарков это процессор, и, возможно, оперативная память.</p></div>
+            <div class="btns"><a class="dwn" href="https://drive.google.com/file/d/1-zU7eGyagBN1WBsIWt95AXV5BuWFOWmP/view?usp=share_link" target="_blank">Скачать</a><a class="of" href="https://www.aida64.com" target="_blank">Сайт</a></div>
+            <p>AIDA64 — утилита FinalWire Ltd. для тестирования и идентификации компонентов персонального компьютера под управлением операционных систем Windows, предоставляющая детальные сведения об аппаратном и программном обеспечении. Является последовательницей утилиты Everest, принадлежащей с 2004 по 2010 года компании Lavalys, которая в свою очередь основана на AIDA32</p>
+          </div>
+          <div class="two"><a name="6"></a><!--Прога 6-->
+            <h3>6) MSI Afterburner</h3>
+            <img class="img2" src="images/6Afbr.jpg">
+            <div class="comm2"><p>Программа для ручной настройки видеокарты, и не только. Переживать не стоит, худшее что вы сможете сделать с этой программой для своего компьютера, так это перезагрузить его.</p></div>
+            <div class="btns"><a class="dwn" href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1675019692~acl=/*~hmac=9c452a9755bd2110d76596d16a5beae354add5c2a947f3647c033ece3dc10420" target="_blank">Скачать</a><a class="of" href="https://www.msi.com/Landing/afterburner/graphics-cards" target="_blank">Сайт</a></div>
+            <p>MSI Afterburner — компьютерная программа для тонкой настройки и разгона видеокарт от NVIDIA и AMD. Программа позволяет отслеживать температуру и частоту графического ядра и памяти, а также управлять практически всеми параметрами видеокарты. Здесь можно найти настройки кулера: включить постоянную скорость вращения вентилятора или определить в процентах количество оборотов в зависимости от нагрузки.</p>
+          </div>
+          <div class="one"><a name="7"></a><!--Прога 7-->
+            <h3>7) Rivatuner Statistics Server (RTTS)</h3>
+            <img class="img1" src="images\7RTTS_log.png">
+            <div class="comm1"><p>Программа для сбора статистики производительности всего компьютера, сама по себе способна вывести только количество FPS, обычно используется в связке с <a href="#6" style="text-decoration: none; color:rgb(124, 4, 4)">MSI Afterburner</a>. Вместе с ней она способна выводить абсолютно любую информацию о любой части компьютера на экран поверх всех окон в реальном времени.</p></div>
+            <div class="btns"><a class="dwn" href="https://www.guru3d.com/index.php?ct=files&action=download&" target="_blank">Скачать</a><a class="of" href="https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html" target="_blank">Сайт</a></div>
+            <p>Да, у этой программы нет вики, а официальный сайт выглядит так, как будто я его за часик сверстал, да и тот на английском, так что более полной информации, чем в моём коментарии вы навряд ли найдёте. Или захотите искать.</p>
+          </div>
+          <div class="one"><a name="8"></a><!--Прога 8-->
+            <h3>8) Opera GX</h3>
+            <img class="img1" src="images\8Icon_of_sin.png">
+            <div class="comm1"><p>Opera GX- первый в мире игровой браузер. Помимо того, что Opera GX сама по себе грамотно использует ресурсы пк, вы так же можете вручную устоновить лимиты используемой оперативной памяти, и регулировать доступную нагрузку на процессор, тем самым использовать браузер во время игры с минимальным влиянием на производительность. Так же есть функция ограничения пропускной способности сети, благодаря чему в сетевых играх у вас не будет задержек из-за фоновой работы браузера. Данная функция будет полезна<a href="https://youtu.be/MGk0gf6LF-Q?t=240" style="text-decoration: none; color:rgb(160,160,160)" target="_blank" >...</a></p></div>
+            <div class="btns"><a class="dwn" href="https://www.opera.com/ru/computer/thanks?ni=eapgx&os=windows&edition=Yx+GX" target="_blank">Скачать</a><a class="of" href="https://www.opera.com/ru/gx" target="_blank">Сайт</a></div>
+            <p>Браузер огонь, сам пользуюсь и вам советую, с 4гб оперативной памяти и i3 первого поколения под Windows 7 работал без нареканий, а теперь из Wiki: Opera GX — это веб-браузер, разработанный норвежской компанией Opera Software специально для геймеров под операционные системы Microsoft Windows, MacOS, Android и iOS. Opera GX поддерживается 32-битной и 64-битной версиями Windows, а также macOS.</p>
+          </div>
+          <div class="one"><a name="9"></a><!--Прога 9-->
+            <h3>9) Notepad++</h3>
+            <img class="img1" style="background-color: rgb(124, 124, 124); border-radius: 10px;" src="images\9Kurama.png">
+            <div class="comm1"><p>Простой редактор кода, позволяет работать с несколькими файлами одновременно. Да, VS Code удобнее, но во-первых Notepad++ удобнее при быстрой работе с группой файлов, раскиданных по разным концам жёсткого диска, а во <a href="https://youtu.be/L3xDtSFEYQ8?t=5" target="_blank" style="color:rgb(160,160,160);">вторых</a>. (Если что, ссылка на скачивание ведёт на скачивание архива с Notepad++, и только под Windows x64. Если хотите установить его другим способом или под другую систему, идите на официальный сайт и выбирайте)</p></div><!--Миша, во имя христа-->
+            <div class="btns"><a class="dwn" href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.8/npp.8.4.8.portable.x64.zip" target="_blank">Скачать</a><a class="of" href="https://notepad-plus-plus.org/downloads/" target="_blank">Сайт</a></div>
+            <p>Notepad++ — свободный текстовый редактор с открытым исходным кодом для Windows с подсветкой синтаксиса, разметки, а также языков описания аппаратуры VHDL и Verilog. Базируется на компоненте Scintilla, написан на C++ с использованием STL, а также Windows API, и распространяется под лицензией GNU General Public License. Базовая функциональность программы может быть расширена как за счёт плагинов, так и сторонних модулей, таких как компиляторы и препроцессоры. Поддерживает открытие более 100 форматов.</p>
+          </div>
+          <div class="two"><a name="10"></a><!--Прога 10-->
+            <h3>10) MSI Center</h3>
+            <img class="img2" src="images\10Cum_missiya.png">
+            <div class="comm2"><p>MSi Center - это обьеденение функционала большинства полезных программ в одной (Aida 64, Cristal Disk Info, FurMark и <span id="Kratos" data-tooltip="Глебка больше не назвал">многих других</span>). Крайне полезная программа, но только при условии что материнская плата от MSI.</p></div>
+            <div class="btns"><a class="dwn" href="https://apps.microsoft.com/store/detail/msi-center/9NVMNJCR03XV?hl=ru-ru&gl=ru&rtc=1" target="_blank">Скачать</a><a class="of" href="https://www.msi.com/Landing/MSI-Center" target="_blank">Сайт</a></div>
+            <p>MSI Center и MSI Center Pro – эксклюзивное программное обеспечение, облегчающее взаимодействие с ноутбуком при запуске игровых и профессиональных приложений. Недавно в нем появились новые функции Smart Auto и Ambient Silent AI, работающие на базе модуля искусственного интеллекта MSI AI Engine.</p>
+          </div>
+        </main>
+        <footer class="loot"> 
+          <div id="templatemo_footer">
+            <div class="ftr">Разработчики <span id="Kratos" data-tooltip="@KpyasaH - Балыбердин Иван (Я); @Hllwlkrrr - Глебка Лазарев (Второй); Жмищенко - Мишаня Двойченко; @episany - Саша Епифанов; @DikiiPirogok - Женя Очилов">Project Cyberius</span> | <a href="project1tsprint@gmail.com" target="_parent">Поддержка</a></div>
+          </div>
+        </footer>
+    </body>
+</html>
